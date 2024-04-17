@@ -17,7 +17,6 @@ const StyledApp = styled.div`
 // Above the input field, there should be a typing notification that displays the name of the user who is typing.
 // This notification should be displayed 8 seconds after event triggered. After 8 seconds, the notification should disappear.
 // If the user is typing again, the timer should reset.
-// If there are no messages, the typing notification should not be displayed.
 // If 2 users are typing, the notification should display the names of both users with comma.
 // If 3 or more users are typing, the notification should display "Several people are typing...".
 
