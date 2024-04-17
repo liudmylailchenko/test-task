@@ -34,6 +34,14 @@ class SDK extends EventEmitter {
     }, this.getRandomInterval());
   }
 
+  subscribe(event: 'message' | 'typing', callback: (data: any) => void) {
+    this.on(event, callback);
+  }
+
+  unSubscribe(event: 'message' | 'typing') {
+    this.removeAllListeners(event);
+  }
+
   private message() {
     setTimeout(() => {
       this.emit('message', {
